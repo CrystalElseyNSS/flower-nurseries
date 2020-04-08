@@ -1,0 +1,29 @@
+{
+    "flowers": [
+        {
+            "id": 1,
+            "commonName": "Pansy",
+            "color": "Blue"
+        },
+        {
+            "id": 2,
+            "commonName": "Violet",
+            "color": "Purple"
+        },
+        {
+            "id": 3,
+            "commonName": "Azalea",
+            "color": "Pink"
+        },
+        {
+            "id": 4,
+            "commonName": "Sunflower",
+            "color": "Yellow"
+        },
+        {
+            "id": 5,
+            "commonName": "Daisy",
+            "color": "White"
+        }
+    ]
+}
