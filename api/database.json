@@ -25,5 +25,42 @@
             "commonName": "Daisy",
             "color": "White"
         }
-    ]
+    ], 
+        "retailers": [
+            {
+                "id": 1,
+                "name": "Pretty Petals",
+                "address": "123 Pansy Park Lane",
+                "city": "Savannah",
+                "state": "GA"
+            },
+            {
+                "id": 2,
+                "name": "Flora Factory",
+                "address": "45 Azalea Ave",
+                "city": "Charleston",
+                "state": "SC"
+            },
+            {
+                "id": 3,
+                "name": "The Stems Cell",
+                "address": "67 Laurel Lane",
+                "city": "Fargo",
+                "state": "ND"
+            },
+            {
+                "id": 4,
+                "name": "Vase-ectomy",
+                "address": "890 Aroma Ave",
+                "city": "Chicago",
+                "state": "IL"
+            },
+            {
+                "id": 5,
+                "name": "Bouquet Bodega",
+                "address": "1 Rosey Road",
+                "city": "San Francisco",
+                "state": "CA"
+            }
+        ]
 }

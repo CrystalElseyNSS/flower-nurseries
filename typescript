@@ -38,3 +38,20 @@ Script started on Wed Apr  8 13:57:47 2020
    [32m│[39m                                                  [32m│[39m
 [32m   └──────────────────────────────────────────────────┘[39m
 [32m[39m
+^C
+[35mINFO:[39m Gracefully shutting down. Please wait...
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/practice-exercises/flower-nurseries]2;crystalelsey@Crystals-MacBook-Pro]1;..wer-nurseries]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/practice-exercises/flower-nurseries[0m[27m[24m[J[01;32m➜  [36mflower-nurseries[00m [01;34mgit:([31mce-flower-retailers[34m) [33m✗[00m [K[?1h=[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/practice-exercises/flower-nurseries]2;crystalelsey@Crystals-MacBook-Pro]1;..wer-nurseries]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/practice-exercises/flower-nurseries[0m[27m[24m[J[01;31m➜  [36mflower-nurseries[00m [01;34mgit:([31mce-flower-retailers[34m) [33m✗[00m [K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[H[2J[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/practice-exercises/flower-nurseries]2;crystalelsey@Crystals-MacBook-Pro]1;..wer-nurseries]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/practice-exercises/flower-nurseries[0m[27m[24m[J[01;32m➜  [36mflower-nurseries[00m [01;34mgit:([31mce-flower-retailers[34m) [33m✗[00m [K[?1h=[?2004hsserve[?1l>[?2004l
+]2;serve]1;serve[32m[39m
+[32m   ┌──────────────────────────────────────────────────┐[39m
+   [32m│[39m                                                  [32m│[39m
+   [32m│[39m   [32mServing![39m                                       [32m│[39m
+   [32m│[39m                                                  [32m│[39m
+   [32m│[39m   [1m- Local:[22m            http://localhost:5000      [32m│[39m
+   [32m│[39m   [1m- On Your Network:[22m  http://172.20.20.20:5000   [32m│[39m
+   [32m│[39m                                                  [32m│[39m
+   [32m│[39m   [90mCopied local address to clipboard![39m             [32m│[39m
+   [32m│[39m                                                  [32m│[39m
+[32m   └──────────────────────────────────────────────────┘[39m
+[32m[39m

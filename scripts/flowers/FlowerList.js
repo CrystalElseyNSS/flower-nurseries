@@ -1,7 +1,7 @@
-import { useFlowers, getFlowers } from "./FlowerDataProvider.js"
+import { useFlowers } from "./FlowerDataProvider.js"
 import { Flower } from "./Flower.js"
 
-const contentTarget = document.querySelector(".container")
+const contentTarget = document.querySelector(".flowerContainer")
 
 const renderFlowers = (flowersToRender) => {
     contentTarget.innerHTML = flowersToRender.map(
