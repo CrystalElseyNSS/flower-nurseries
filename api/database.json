@@ -90,5 +90,131 @@
                 "city": "Austin",
                 "state": "TX"
             }
+        ],
+        "nurseries": [
+            {
+                "id": 1,
+                "name": "Flower Babies"
+            },
+            {
+                "id": 2,
+                "name": "Rock-a-Bye Bluebells"
+            },
+            {
+                "id": 3,
+                "name": "Bud Hub"
+            },
+            {
+                "id": 4,
+                "name": "Heavy Petal"
+            },
+            {
+                "id": 5,
+                "name": "Hate to Watch You Leaf, Love to Watch You Grow"
+            }
+        ],
+        "nurseryFlowers": [
+            {
+                "id": 1,
+                "nurseryId": 1,
+                "flowerId": 1
+            },
+            {
+                "id": 2,
+                "nurseryId": 1,
+                "flowerId": 2
+            },
+            {
+                "id": 3,
+                "nurseryId": 2,
+                "flowerId": 3
+            },
+            {
+                "id": 4,
+                "nurseryId": 2,
+                "flowerId": 4
+            },
+            {
+                "id": 5,
+                "nurseryId": 3,
+                "flowerId": 5
+            },
+            {
+                "id": 6,
+                "nurseryId": 3,
+                "flowerId": 1
+            },
+            {
+                "id": 7,
+                "nurseryId": 4,
+                "flowerId": 2
+            },
+            {
+                "id": 8,
+                "nurseryId": 4,
+                "flowerId": 3
+            },
+            {
+                "id": 9,
+                "nurseryId": 5,
+                "flowerId": 4
+            },
+            {
+                "id": 10,
+                "nurseryId": 5,
+                "flowerId": 5
+            }
+        ],
+        "distributorNurseries": [
+            {
+                "id": 1,
+                "distributorId": 1,
+                "nurseryId": 1
+            },
+            {
+                "id": 2,
+                "distributorId": 1,
+                "nurseryId": 2
+            },
+            {
+                "id": 3,
+                "distributorId": 2,
+                "nurseryId": 3
+            },
+            {
+                "id": 4,
+                "distributorId": 2,
+                "nurseryId": 4
+            },
+            {
+                "id": 5,
+                "distributorId": 3,
+                "nurseryId": 5
+            },
+            {
+                "id": 6,
+                "distributorId": 3,
+                "nurseryId": 1
+            },
+            {
+                "id": 7,
+                "distributorId": 4,
+                "nurseryId": 2
+            },
+            {
+                "id": 8,
+                "distributorId": 4,
+                "nurseryId": 3
+            },
+            {
+                "id": 9,
+                "distributorId": 5,
+                "nurseryId": 4
+            },
+            {
+                "id": 10,
+                "distributorId": 5,
+                "nurseryId": 5
+            }
         ]
 }
