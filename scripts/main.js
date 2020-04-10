@@ -6,6 +6,7 @@ import { RetailerList } from "./retailers/RetailerList.js"
 import { getDistributorNurseries } from "./relationships/DistributorNurseriesDataProvider.js"
 import { getNurseryFlowers } from "./relationships/NurseryFlowersDataProvider.js"
 import { getNurseries } from "./nurseries/NurseryDataProvider.js"
+import { getColors } from "./colors/ColorDataProvider.js"
 
 
 
@@ -17,5 +18,6 @@ getFlowers()
     .then(getDistributorNurseries)
     .then(getNurseries)
     .then(getNurseryFlowers)
+    .then(getColors)
     .then(FlowerList)
     .then(RetailerList)

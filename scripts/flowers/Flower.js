@@ -1,7 +1,7 @@
-export const Flower = (flowerObject) => {
+export const Flower = (flower, color) => {
     return `
         <section class="flower">
-            <h3>Flower Name: ${flowerObject.commonName}</h3>
-            <p>Color: ${flowerObject.color}</p>
+            <h3>Flower Name: ${flower.commonName}</h3>
+            <p>Color: ${color.mainColor}</p>
     `
 }
