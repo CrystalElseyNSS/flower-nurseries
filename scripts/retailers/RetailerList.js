@@ -6,38 +6,40 @@ import { useDistributorNurseries } from "../relationships/DistributorNurseriesDa
 import { useNurseryFlowers } from "../relationships/NurseryFlowersDataProvider.js"
 import { Retailer } from "./Retailer.js"
 
-
 const contentTarget = document.querySelector(".retailerContainer")
 
 const renderRetailers = (retailersToRender) => {
     const distributors = useDistributors()
-    const flowers = useFlowers()
-    const nurseries = useNurseries()
     const distributorNurseries = useDistributorNurseries()
+    const nurseries = useNurseries()
     const nurseryFlowers = useNurseryFlowers()
+    const flowers = useFlowers()
 
     contentTarget.innerHTML = retailersToRender.map(
         (retailer) => {
 
             // One-to-many: finds the distributor for the current retailer:
-            const foundDistributor = distributors.find (distributor => distributor.id === retailer.distributorId)
+            const foundDistributor = distributors.find(distributor => distributor.id === retailer.distributorId)
 
-            // Many-to-many: Gets all the relationship objects between the distributor and its nurseries:
-            let nurseriesForThisDistributor = distributorNurseries.filter (distributorNursery => distributorNursery.distributorId === foundDistributor.id)
+            // Many-to-many: Gets all the relationship objects between the distributor and its nurseries from the join table:
+            const distributorNurseryRelationships = distributorNurseries.filter(distributorNursery => foundDistributor.id === distributorNursery.distributorId)
 
-            // Turns the nursery relationship objects into actual nursery objects: 
-            nurseriesForThisDistributor = nurseriesForThisDistributor.map (distributorNursery => nurseries.find (nursery => nursery.id === distributorNursery.nurseryId))
+            // Turns the distributor/nursery relationship objects into nursery objects: 
+            const nurseriesForThisDistributor = distributorNurseryRelationships.map(distributorNursery => nurseries.find(nursery => distributorNursery.nurseryId === nursery.id))
 
-            // Many-to-many: Gets all the relationship objects between the nurseries and the flowers:
-            let flowersSoldbyThisNursery = nurseriesForThisDistributor.map (nursery => {
-                let flowersForThisNursery = nurseryFlowers.filter (nurseryFlower => nursery.id === nurseryFlower.nurseryId)
-                flowersForThisNursery = flowersForThisNursery.map (nurseryFlower => flowers.find (flower => nurseryFlower.flowerId === flower.id ))
-                return flowersForThisNursery
+            // Renders all of the available flowers from all nurseries for each retailer: 
+            const allAvailableFlowers = nurseriesForThisDistributor.map (foundNursery => {
+                // Gets all the relationship objects between the nurseries and the flowers from the join table:
+                const nurseryFlowerRelationships = nurseryFlowers.filter (nurseryFlower => foundNursery.id === nurseryFlower.nurseryId)
+                // Turns the nursery/flower relationship objects into flower objects: 
+                const flowersFromThisNursery = nurseryFlowerRelationships.map (nurseryFlower => flowers.find (flower => nurseryFlower.flowerId === flower.id))
+                return flowersFromThisNursery
             }).flat()
-            return Retailer(retailer, foundDistributor, nurseriesForThisDistributor, flowersSoldbyThisNursery)           
+                    
+            // Renders the HTML for each retailer with the inserted arguments:
+            return Retailer(retailer, foundDistributor, nurseriesForThisDistributor, allAvailableFlowers)           
         } 
     ).join("")
-    
 }
 
 export const RetailerList = () => {
