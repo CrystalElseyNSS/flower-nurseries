@@ -1,31 +1,53 @@
 {
-    "flowers": [
-        {
-            "id": 1,
-            "commonName": "Pansy",
-            "color": "Blue"
-        },
-        {
-            "id": 2,
-            "commonName": "Violet",
-            "color": "Purple"
-        },
-        {
-            "id": 3,
-            "commonName": "Azalea",
-            "color": "Pink"
-        },
-        {
-            "id": 4,
-            "commonName": "Sunflower",
-            "color": "Yellow"
-        },
-        {
-            "id": 5,
-            "commonName": "Daisy",
-            "color": "White"
-        }
+        "flowers": [
+            {
+                "id": 1,
+                "commonName": "Pansy",
+                "colorId": 5
+            },
+            {
+                "id": 2,
+                "commonName": "Violet",
+                "colorId": 4
+            },
+            {
+                "id": 3,
+                "commonName": "Azalea",
+                "colorId": 1
+            },
+            {
+                "id": 4,
+                "commonName": "Sunflower",
+                "colorId": 3
+            },
+            {
+                "id": 5,
+                "commonName": "Daisy",
+                "colorId": 2
+            }
     ], 
+        "colors": [
+            {
+                "id": 1,
+                "mainColor": "pink"
+            },
+            {
+                "id": 2,
+                "mainColor": "white"
+            },
+            {
+                "id": 3,
+                "mainColor": "yellow"
+            },
+            {
+                "id": 4,
+                "mainColor": "purple"
+            },
+            {
+                "id": 5,
+                "mainColor": "blue"
+            }
+        ],
         "retailers": [
             {
                 "id": 1,

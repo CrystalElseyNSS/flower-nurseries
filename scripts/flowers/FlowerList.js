@@ -1,12 +1,16 @@
 import { useFlowers } from "./FlowerDataProvider.js"
 import { Flower } from "./Flower.js"
+import { useColors } from "../colors/ColorDataProvider.js"
 
 const contentTarget = document.querySelector(".flowerContainer")
 
 const renderFlowers = (flowersToRender) => {
+    const colors = useColors()
+
     contentTarget.innerHTML = flowersToRender.map(
         (flowerObject) => {
-            return Flower(flowerObject)
+            const flowerColor = colors.find(color => color.id === flowerObject.colorId)
+            return Flower(flowerObject, flowerColor)
         }
     ).join("")
 }
